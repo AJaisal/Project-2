@@ -1,0 +1,95 @@
+/* GENERAL RESET */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+/* FLUID WRAPPER */
+.wrapper {
+  width: 95vw;         /* fluid layout */
+  max-width: 1400px;   /* prevents it from becoming too wide */
+  margin: 0 auto;      /* centers it */
+}
+
+/* HEADER */
+header {
+  background-color: #005f99;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.header-text p {
+  margin: 5px 0 0;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #003f66;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* INTRO SECTION */
+.intro {
+  padding: 40px 20px;
+}
+
+.intro-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.logo {
+  width: 350px;  /* large image as requested */
+  height: auto;
+  border-radius: 10px;
+}
+
+.intro-text {
+  max-width: 900px;
+}
+
+.intro-text h2 {
+  margin-top: 0;
+}
+
+/* FOOTER (OPTION 2) */
+footer {
+  background-color: #003f66; /* same as nav */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .intro-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+}
