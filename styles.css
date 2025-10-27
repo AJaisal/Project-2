@@ -1,0 +1,205 @@
+/* ========== GENERAL RESET ========== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+/* ========== FLUID WRAPPER ========== */
+.wrapper {
+  width: 95vw;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ========== HEADER ========== */
+header {
+  background-color: #005f99;
+  padding: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.header-text p {
+  margin: 5px 0 0;
+}
+
+/* ========== NAVIGATION ========== */
+nav {
+  background-color: #003f66;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ========== LAYOUT FOR MAIN + SIDEBAR ========== */
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.main-content {
+  flex: 1 1 70%;
+}
+
+.sidebar {
+  flex: 1 1 25%;
+  background-color: #e3e9f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.sidebar h2,
+.sidebar h3 {
+  color: #005f99;
+  margin-top: 15px;
+}
+
+/* ========== INTRO SECTION (Home page) ========== */
+.intro {
+  padding: 40px 20px;
+}
+
+.intro-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.intro-text {
+  max-width: 900px;
+}
+
+.intro-text h2 {
+  margin-top: 0;
+}
+
+/* Large image on HOME page */
+.feature-image {
+  width: 380px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* ========== FORM STYLES (Contact Page) ========== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #005f99;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  font-size: 1em;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.form-buttons {
+  margin-top: 10px;
+}
+
+.form-buttons input[type="submit"],
+.form-buttons input[type="reset"] {
+  background-color: #005f99;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-buttons input:hover {
+  background-color: #003f66;
+}
+
+/* ========== GALLERY STYLES (Trigonometry Page) ========== */
+.gallery figure {
+  text-align: center;
+  margin: 25px auto;
+  width: 100%;
+}
+
+.gallery img {
+  width: 450px; 
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.gallery figcaption {
+  margin-top: 8px;
+  font-style: italic;
+  color: #333;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #003f66;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* ========== RESPONSIVE ADJUSTMENTS ========== */
+@media (max-width: 768px) {
+  .intro-content,
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo,
+  .feature-image {
+    margin: 0 auto;
+  }
+
+  .main-content,
+  .sidebar {
+    flex: 1 1 100%;
+  }
+}

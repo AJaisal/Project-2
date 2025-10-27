@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Study Network</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="picture.png" alt="Study Network Logo" class="logo" />
+    <div class="header-text">
+      <h1>Study Network</h1>
+      <p>Your friendly guide to mastering math</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="algebra.html">Algebra</a>
+    <a href="trigonometry.html">Trigonometry</a>
+    <a href="precalculus.html">Precalculus</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="content-wrapper">
+    <main class="main-content">
+      <h2>Contact Study Network</h2>
+      <p>Have a question, need help with a topic, or want to share feedback? Send us a message below!</p>
+
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="grade">Grade Level:</label>
+        <select id="grade" name="grade">
+          <option value="" disabled selected>Select your grade</option>
+          <option>6th-8th</option>
+          <option>9th-10th</option>
+          <option>11th-12th</option>
+          <option>College</option>
+        </select>
+
+        <label for="subject">Math Topic:</label>
+        <select id="subject" name="subject">
+          <option value="" disabled selected>Select a subject</option>
+          <option>Algebra</option>
+          <option>Trigonometry</option>
+          <option>Precalculus</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Type your question or feedback here..."></textarea>
+
+        <div class="form-buttons">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </div>
+      </form>
+    </main>
+
+    <aside class="sidebar">
+      <h3>Need Help?</h3>
+      <p>Feel free to reach out anytime. We're here to make math easier and more enjoyable.</p>
+
+      <h4>Contact Info</h4>
+      <p><strong>Email:</strong> info@studynetwork.com</p>
+      <p><strong>Response Time:</strong> Within 24 hours</p>
+
+      <h4>Why Contact Us?</h4>
+      <ul>
+        <li>Get clarification on tough topics</li>
+        <li>Request new lessons or features</li>
+        <li>Give feedback to improve the site</li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Study Network | Contact: info@studynetwork.com</p>
+  </footer>
+</body>
+</html>
