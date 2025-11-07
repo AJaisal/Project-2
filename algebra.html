@@ -13,53 +13,103 @@
 </head>
 
 <body>
-<header>
-  <img src="picture.png" alt="Study Network Logo" class="logo" />
-  <div class="header-text">
-    <h1>Study Network</h1>
-    <p>Your friendly guide to mastering math</p>
+  <!-- HEADER -->
+  <header class="py-4">
+    <div class="header-inner">
+      <img src="picture.png" alt="Study Network Logo" class="logo me-3" />
+      <div class="header-text text-start">
+        <h1>Study Network</h1>
+        <p>Your friendly guide to mastering math</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="algebra.html" class="active">Algebra</a>
+    <a href="trigonometry.html">Trigonometry</a>
+    <a href="precalculus.html">Precalculus</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="content-wrapper d-flex flex-wrap justify-content-center">
+    <main class="main-content col-md-8">
+      <h2>Welcome to Algebra</h2>
+      <p>Algebra helps you understand how numbers, variables, and operations work together. It’s the foundation for most areas of mathematics and is essential for science, technology, and problem-solving in the real world.</p>
+
+      <h3>What You'll Learn</h3>
+      <ul>
+        <li><strong>Variables and Expressions:</strong> Represent unknowns and relationships with symbols.</li>
+        <li><strong>Linear Equations and Inequalities:</strong> Solve one-step, two-step, and multi-step problems.</li>
+        <li><strong>Quadratic Equations:</strong> Understand parabolas and the power of factoring.</li>
+        <li><strong>Functions and Graphing:</strong> Explore how equations represent real-world relationships.</li>
+      </ul>
+
+      <hr>
+
+      <h3>Topic Focus: Solving Quadratic Equations</h3>
+      <p>Quadratic equations are equations of the form <strong>ax² + bx + c = 0</strong>. They represent parabolas and can be solved in several ways. Let’s go through the most common method — <em>factoring</em>.</p>
+
+      <h4>Example Problem:</h4>
+      <p><strong>Solve:</strong> x² + 5x + 6 = 0</p>
+
+      <h4>Step-by-Step Solution:</h4>
+      <ol>
+        <li><strong>Identify a, b, and c:</strong>  
+          a = 1, b = 5, c = 6.</li>
+
+        <li><strong>Find two numbers that multiply to c (6) and add up to b (5):</strong>  
+          Those numbers are 2 and 3.</li>
+
+        <li><strong>Write factors:</strong>  
+          (x + 2)(x + 3) = 0</li>
+
+        <li><strong>Set each factor equal to zero:</strong>  
+          x + 2 = 0 → x = -2  
+          x + 3 = 0 → x = -3</li>
+
+        <li><strong>Check your answers:</strong>  
+          Substitute x = -2 and x = -3 into the original equation to verify both work.</li>
+      </ol>
+
+      <p><strong>Final Answer:</strong> x = -2, -3</p>
+
+      <div class="algebra-image text-center">
+        <img src="parabola.png" alt="Quadratic Function Graph" class="feature-image">
+        <figcaption>Example of a parabola: y = x² + 5x + 6</figcaption>
+      </div>
+
+      <hr>
+
+      <h3>Why Algebra Matters</h3>
+      <p>Algebra strengthens your logical thinking and helps you analyze patterns. From coding and finance to architecture and science, algebraic thinking is used everywhere to solve problems and make predictions.</p>
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar col-md-3">
+      <h3>Study Tips</h3>
+      <ul>
+        <li>Work on small problems daily to build fluency.</li>
+        <li>Write each step clearly when solving equations.</li>
+        <li>Check your solutions by substitution.</li>
+        <li>Use online graphing tools to visualize functions.</li>
+      </ul>
+
+      <h3>Helpful Resources</h3>
+      <ul>
+        <li><a href="https://www.khanacademy.org/math/algebra" target="_blank">Khan Academy Algebra</a></li>
+        <li><a href="https://www.desmos.com/" target="_blank">Desmos Graphing Calculator</a></li>
+        <li><a href="https://www.mathsisfun.com/algebra/" target="_blank">Math is Fun: Algebra</a></li>
+      </ul>
+    </aside>
   </div>
-</header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="algebra.html">Algebra</a>
-  <a href="trigonometry.html">Trigonometry</a>
-  <a href="precalculus.html">Precalculus</a>
-  <a href="quiz.html">Quiz</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-<div class="content-wrapper">
-  <main class="main-content">
-    <h2>Welcome to Algebra</h2>
-    <p>Algebra is the language of patterns, relationships, and problem solving. Here you'll build the foundation that powers advanced math and real-world logic.</p>
-
-    <h3>What You'll Learn</h3>
-    <ul>
-      <li>Variables and expressions</li>
-      <li>Simplifying and factoring</li>
-      <li>Linear equations and inequalities</li>
-      <li>Solving systems of equations</li>
-      <li>Graphing and functions</li>
-    </ul>
-
-    <p>Start with the basics and build confidence one problem at a time. Algebra isn't just about numbers; it's about thinking like a problem solver.</p>
-  </main>
-
-  <aside class="sidebar">
-    <h3>Study Tips</h3>
-    <ul>
-      <li>Practice one topic at a time</li>
-      <li>Check steps as you go</li>
-      <li>Draw graphs to visualize ideas</li>
-      <li>Review mistakes to improve faster</li>
-    </ul>
-  </aside>
-</div>
-
-<footer>
-  <p>&copy; 2025 Study Network | All Rights Reserved</p>
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Study Network | All Rights Reserved</p>
+  </footer>
 </body>
 </html>

@@ -11,26 +11,91 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
-    <img src="picture.png" alt="Study Network Logo" class="logo" />
-    <div class="header-text">
-      <h1>Study Network</h1>
-      <p>Your friendly guide to mastering math</p>
+  <!-- HEADER -->
+  <header class="py-4">
+    <div class="header-inner">
+      <img src="picture.png" alt="Study Network Logo" class="logo me-3" />
+      <div class="header-text text-start">
+        <h1>Study Network</h1>
+        <p>Your friendly guide to mastering math</p>
+      </div>
     </div>
   </header>
 
+  <!-- NAVIGATION -->
   <nav>
     <a href="index.html">Home</a>
     <a href="algebra.html">Algebra</a>
-    <a href="trigonometry.html">Trigonometry</a>
+    <a href="trigonometry.html" class="active">Trigonometry</a>
     <a href="precalculus.html">Precalculus</a>
     <a href="quiz.html">Quiz</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <div class="content-wrapper">
-    <main class="main-content">
+  <!-- MAIN CONTENT -->
+  <div class="content-wrapper d-flex flex-wrap justify-content-center">
+    <main class="main-content col-md-8">
+      <h2>Understanding Trigonometry</h2>
+      <p>Trigonometry is the study of triangles — especially the relationships between angles and sides. It plays a major role in physics, architecture, engineering, and even navigation. By mastering trigonometric ratios like sine, cosine, and tangent, you can describe patterns of motion and waves found throughout nature and technology.</p>
+
+      <hr>
+
+      <h3>Core Concepts</h3>
+      <ul>
+        <li><strong>Angles and Triangles:</strong> Learn how sides and angles relate to one another.</li>
+        <li><strong>Right Triangles:</strong> Use the Pythagorean theorem and trig ratios to find unknown sides.</li>
+        <li><strong>The Unit Circle:</strong> Understand how sine and cosine correspond to circular motion.</li>
+        <li><strong>Graphs of Trig Functions:</strong> Discover periodic patterns of sine, cosine, and tangent.</li>
+      </ul>
+
+      <hr>
+
+      <h3>Steps to Solve a Right Triangle</h3>
+      <p>When solving right triangles, we use trigonometric ratios and the Pythagorean theorem. The goal is usually to find missing sides or angles given some known information.</p>
+
+      <ol>
+        <li><strong>Step 1: Identify the Known Values</strong>  
+          Look at the triangle and label the sides: opposite, adjacent, and hypotenuse relative to the given angle.
+        </li>
+
+        <li><strong>Step 2: Choose the Correct Trig Ratio</strong>  
+          Decide whether to use sine, cosine, or tangent based on the sides you know:  
+          <ul>
+            <li>sin(θ) = opposite / hypotenuse</li>
+            <li>cos(θ) = adjacent / hypotenuse</li>
+            <li>tan(θ) = opposite / adjacent</li>
+          </ul>
+        </li>
+
+        <li><strong>Step 3: Substitute the Known Values</strong>  
+          Plug the given numbers into your equation.  
+          <em>Example:</em> sin(30°) = x / 10
+        </li>
+
+        <li><strong>Step 4: Solve for the Unknown Side</strong>  
+          Multiply or divide to isolate the unknown variable.  
+          <em>Example:</em> x = 10 × sin(30°) → x = 5
+        </li>
+
+        <li><strong>Step 5: Use the Pythagorean Theorem (if needed)</strong>  
+          If you know two sides, use a² + b² = c² to find the third.
+        </li>
+
+        <li><strong>Step 6: Verify Your Answer</strong>  
+          Check calculations and ensure side ratios make sense (the hypotenuse should always be the longest side).
+        </li>
+      </ol>
+
+      <div class="text-center mt-4">
+        <img src="righttriangle.jpg" alt="Right Triangle Example" class="feature-image">
+        <figcaption>Example: Solving for a missing side in a right triangle.</figcaption>
+      </div>
+
+      <hr>
+
+      <h3>Trigonometry Gallery</h3>
       <div class="gallery">
         <figure>
           <img src="typesoftriangle.png" alt="Types of Triangles">
@@ -38,39 +103,35 @@
         </figure>
 
         <figure>
-          <img src="righttriangle.jpg" alt="Right Triangle Diagram">
-          <figcaption>SOH-CAH-TOA: the basis of trigonometric functions.</figcaption>
+          <img src="unitcircle.gif" alt="Unit Circle Diagram">
+          <figcaption>The Unit Circle connects angles to coordinates for sine & cosine.</figcaption>
         </figure>
 
         <figure>
-          <img src="unitcircle.gif" alt="Unit Circle Diagram">
-          <figcaption>The Unit Circle connects angles to coordinates for sine & cosine.</figcaption>
+          <img src="triggraph.png" alt="Trigonometric Graph">
+          <figcaption>Graph of y = sin(x): periodic and wave-like motion.</figcaption>
         </figure>
       </div>
     </main>
 
-    <aside class="sidebar">
-      <h2>Trigonometry Gallery</h2>
-      <p>A visual walk-through of key concepts in trigonometry.</p>
-
-      <h3>Triangle Classifications</h3>
-      <p>See how side and angle relationships build your geometry foundation.</p>
-
-      <h3>Right Triangle & SOH-CAH-TOA</h3>
-      <p>Remember:</p>
+    <!-- SIDEBAR -->
+    <aside class="sidebar col-md-3">
+      <h3>Quick Trig Review</h3>
       <ul>
-        <li>Sine = Opp / Hyp</li>
-        <li>Cosine = Adj / Hyp</li>
-        <li>Tangent = Opp / Adj</li>
+        <li>Sine (sin) = Opposite / Hypotenuse</li>
+        <li>Cosine (cos) = Adjacent / Hypotenuse</li>
+        <li>Tangent (tan) = Opposite / Adjacent</li>
       </ul>
 
-      <h3>Unit Circle</h3>
-      <p>Link angles to coordinates and explore sine & cosine across quadrants.</p>
+      <h3>Key Formulas</h3>
+      <ul>
+        <li><strong>sin²θ + cos²θ = 1</strong></li>
+        <li><strong>tanθ = sinθ / cosθ</strong></li>
+        <li><strong>c² = a² + b²</strong></li>
+      </ul>
 
-      <!-- Accordion -->
-      <h3>Trig Topics Breakdown</h3>
+      <h3>Topic Breakdown</h3>
       <div class="accordion" id="trigAccordion">
-
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#triangleTypes">
@@ -79,7 +140,7 @@
           </h2>
           <div id="triangleTypes" class="accordion-collapse collapse show">
             <div class="accordion-body">
-              Explore equilateral, isosceles, scalene, and right triangles. Each reveals special angle and side rules.
+              Explore equilateral, isosceles, scalene, and right triangles. Each has unique side and angle properties.
             </div>
           </div>
         </div>
@@ -92,7 +153,8 @@
           </h2>
           <div id="sohcahtoa" class="accordion-collapse collapse">
             <div class="accordion-body">
-              Sine, cosine, and tangent connect angles to side lengths in right triangles.
+              These three ratios connect angles to sides in right triangles:  
+              sin(θ) = opp/hyp, cos(θ) = adj/hyp, tan(θ) = opp/adj.
             </div>
           </div>
         </div>
@@ -100,20 +162,20 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#unitCircle">
-              Unit Circle
+              The Unit Circle
             </button>
           </h2>
           <div id="unitCircle" class="accordion-collapse collapse">
             <div class="accordion-body">
-              Understand angles in radians, coordinates on the circle, and sine & cosine symmetry.
+              The Unit Circle defines sine and cosine values for every angle and helps you visualize periodic functions.
             </div>
           </div>
         </div>
-
       </div>
     </aside>
   </div>
 
+  <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 Study Network | All Rights Reserved</p>
   </footer>

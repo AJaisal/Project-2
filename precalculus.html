@@ -13,53 +13,123 @@
 </head>
 
 <body>
-<header>
-  <img src="picture.png" alt="Study Network Logo" class="logo" />
-  <div class="header-text">
-    <h1>Study Network</h1>
-    <p>Your friendly guide to mastering math</p>
+  <!-- HEADER -->
+  <header class="py-4">
+    <div class="header-inner">
+      <img src="picture.png" alt="Study Network Logo" class="logo me-3" />
+      <div class="header-text text-start">
+        <h1>Study Network</h1>
+        <p>Your friendly guide to mastering math</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="algebra.html">Algebra</a>
+    <a href="trigonometry.html">Trigonometry</a>
+    <a href="precalculus.html" class="active">Precalculus</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="content-wrapper d-flex flex-wrap justify-content-center">
+    <main class="main-content col-md-8">
+      <h2>Welcome to Precalculus</h2>
+      <p>Precalculus is the bridge between algebra, geometry, and calculus. It deepens your understanding of functions, graphs, and mathematical patterns that model real-world behavior — from population growth to sound waves.</p>
+
+      <hr>
+
+      <h3>Core Concepts</h3>
+      <ul>
+        <li><strong>Functions and Transformations:</strong> Learn how shifting, stretching, and reflecting graphs changes their behavior.</li>
+        <li><strong>Exponential and Logarithmic Functions:</strong> Understand growth and decay in natural systems.</li>
+        <li><strong>Trigonometric Functions:</strong> Study periodic motion and cycles in mathematics.</li>
+        <li><strong>Limits:</strong> Prepare for the central ideas of calculus.</li>
+        <li><strong>Conic Sections:</strong> Explore parabolas, ellipses, and hyperbolas.</li>
+      </ul>
+
+      <hr>
+
+      <h3>Steps to Solve an Exponential Function</h3>
+      <p>Exponential equations involve variables in the exponent and often describe growth or decay. Here’s a step-by-step example on how to solve them.</p>
+
+      <h4>Example Problem:</h4>
+      <p><strong>Solve for x:</strong> 3<sup>x</sup> = 81</p>
+
+      <ol>
+        <li><strong>Step 1: Write 81 as a Power of 3</strong>  
+          81 = 3<sup>4</sup>
+        </li>
+
+        <li><strong>Step 2: Rewrite the Equation</strong>  
+          3<sup>x</sup> = 3<sup>4</sup>
+        </li>
+
+        <li><strong>Step 3: Set Exponents Equal</strong>  
+          Since the bases are the same, x = 4.
+        </li>
+
+        <li><strong>Step 4: Verify the Solution</strong>  
+          Substitute x = 4 into 3<sup>x</sup>:  
+          3<sup>4</sup> = 81 
+        </li>
+      </ol>
+
+      <div class="text-center mt-4">
+        <img src="exponentialgraph.png" alt="Exponential Function Graph" class="feature-image">
+        <figcaption>Graph of y = 3<sup>x</sup> showing exponential growth.</figcaption>
+      </div>
+
+      <hr>
+
+      <h3>Steps to Solve a Logarithmic Equation</h3>
+      <p>Logarithms are the inverses of exponential functions. They help solve equations where the variable is an exponent.</p>
+
+      <h4>Example Problem:</h4>
+      <p><strong>Solve for x:</strong> log<sub>2</sub>(x) = 5</p>
+
+      <ol>
+        <li><strong>Step 1:</strong> Rewrite in exponential form → 2<sup>5</sup> = x</li>
+        <li><strong>Step 2:</strong> Simplify → x = 32</li>
+        <li><strong>Step 3:</strong> Check your answer → log<sub>2</sub>(32) = 5 </li>
+      </ol>
+
+      <div class="text-center mt-4">
+        <img src="loggraph.png" alt="Logarithmic Function Graph" class="feature-image">
+        <figcaption>Graph of y = log<sub>2</sub>(x): inverse of the exponential curve.</figcaption>
+      </div>
+
+      <hr>
+
+      <h3>Why Precalculus Matters</h3>
+      <p>Precalculus gives you the tools to interpret mathematical relationships found in science, finance, and nature. By mastering these topics, you’ll enter calculus with the confidence to analyze limits, change, and motion with precision.</p>
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar col-md-3">
+      <h3>Study Tips</h3>
+      <ul>
+        <li>Review algebra and trigonometry regularly.</li>
+        <li>Use graphing calculators or Desmos to visualize functions.</li>
+        <li>Practice rewriting exponential and log forms.</li>
+        <li>Focus on understanding patterns in graphs.</li>
+      </ul>
+
+      <h3>Helpful Resources</h3>
+      <ul>
+        <li><a href="https://www.khanacademy.org/math/precalculus" target="_blank">Khan Academy: Precalculus</a></li>
+        <li><a href="https://www.desmos.com/" target="_blank">Desmos Graphing Tool</a></li>
+        <li><a href="https://www.purplemath.com/modules/exponent3.htm" target="_blank">PurpleMath: Exponential & Logarithmic Equations</a></li>
+      </ul>
+    </aside>
   </div>
-</header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="algebra.html">Algebra</a>
-  <a href="trigonometry.html">Trigonometry</a>
-  <a href="precalculus.html">Precalculus</a>
-  <a href="quiz.html">Quiz</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-<div class="content-wrapper">
-  <main class="main-content">
-    <h2>Welcome to Precalculus</h2>
-    <p>Precalculus bridges algebra, geometry, and calculus. This is where patterns deepen, graphs come alive, and functions start dancing across the coordinate plane.</p>
-
-    <h3>What You'll Learn</h3>
-    <ul>
-      <li>Advanced functions and transformations</li>
-      <li>Exponential and logarithmic relationships</li>
-      <li>Trigonometric functions and graphs</li>
-      <li>Limits and concepts leading into calculus</li>
-      <li>Analytic geometry and conic sections</li>
-    </ul>
-
-    <p>Think of precalculus as the final climb before the summit of calculus. Build strong skills here, and you'll breeze into the next level.</p>
-  </main>
-
-  <aside class="sidebar">
-    <h3>Helpful Reminders</h3>
-    <ul>
-      <li>Review algebra and trig basics often</li>
-      <li>Sketch graphs to see patterns clearly</li>
-      <li>Practice rewriting expressions different ways</li>
-      <li>Take your time with new functions</li>
-    </ul>
-  </aside>
-</div>
-
-<footer>
-  <p>&copy; 2025 Study Network | All Rights Reserved</p>
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Study Network | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
